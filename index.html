@@ -405,13 +405,45 @@
                 </a></li>
             </ul>
             </div>
+                <form class="forma" name="sighn-up-for-mailing" action="" autocomplete="on">
+                    <h3 class="sighn">Подпишитесь на рассылку</h3>
+                    <label class="label-mail" for="E-mail" >E-mail</label>
+                    <input class="input-mail" type="E-mail" name="E-mail" id="E-mail" >
+                    <button class="submit-button" type="submit">
+                        <svg class="send" width="24" height="24">
+                            <use href="./css/img.css/svg-img/send.svg#icon-send"></use>
+                        </svg>
+                        Подписаться</button>
+                </form>
             </div>
     </footer>
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
+        <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+        <form class="modal-form" action="">
+            <label class="user-contacts" for="user-name">Имя</label>
+            <input class="user-contacts" type="name" name="name" id="user-name">
+
+            <label class="user-contacts" for="user-tell">Телефон</label>
+            <input class="user-contacts" type="tell" name="tell" id="user-tell">
+
+            <label class="user-contacts" for="user-email">Почта</label>
+            <input class="user-contacts" type="user-email" name="user-email" id="user-email">
+
+            <label class="user-contacts" for="user-comments">Комментарий</label>
+            <textarea name="comments" id="user-comments" cols="30" rows="10" placeholder="Введите текст"></textarea>
+        </form>
+        <form  action="">
+            <label class="user-deal" for="user-deal">
+                <input class="checkbox" type="checkbox" name="user-deal" value="deal">
+                Соглашаюсь с рассылкой и принимаю <a href=""> Условия договора</a></label>
+        </form>
+        <form class="send-button" action="">
+            <button type="submit">Отправить</button>
+        </form>
     <button class="close" data-modal-close>
-        <svg width="11" height="11">
-            <use href="./css/img.css/svg-img/close.svg#icon-close"></use>
+        <svg class="close-hover" width="11" height="11">
+            <use  href="./css/img.css/svg-img/close.svg#icon-close"></use>
         </svg>
         </button>
     </div>
