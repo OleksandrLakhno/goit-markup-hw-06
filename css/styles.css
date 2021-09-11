@@ -694,8 +694,15 @@ img {
 textarea {
   resize: none;
 }
-.checkbox {
-  margin: 25px 8px 0px 52px;
+.user-deal {
+  display: flex;
+  justify-content: center;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 .send-button {
   display: flex;

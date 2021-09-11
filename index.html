@@ -432,14 +432,14 @@
 
             <label class="user-contacts" for="user-comments">Комментарий</label>
             <textarea name="comments" id="user-comments" cols="30" rows="10" placeholder="Введите текст"></textarea>
-        </form>
-        <form  action="">
-            <label class="user-deal" for="user-deal">
-                <input class="checkbox" type="checkbox" name="user-deal" value="deal">
-                Соглашаюсь с рассылкой и принимаю <a href=""> Условия договора</a></label>
-        </form>
-        <form class="send-button" action="">
-            <button type="submit">Отправить</button>
+            <div class="user-deal">
+                <label  for="user-deal">
+                    <input class="checkbox" type="checkbox" name="user-deal" value="deal">
+                    Соглашаюсь с рассылкой и принимаю <a href=""> Условия договора</a></label>
+            </div>
+            <div class="send-button">
+                <button type="submit">Отправить</button>
+            </div>
         </form>
     <button class="close" data-modal-close>
         <svg class="close-hover" width="11" height="11">
