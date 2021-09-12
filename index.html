@@ -405,10 +405,10 @@
                 </a></li>
             </ul>
             </div>
-                <form class="forma" name="sighn-up-for-mailing" action="" autocomplete="on">
+                <form class="forma" name="sighn-up-for-mailing"  autocomplete="on">
                     <h3 class="sighn">Подпишитесь на рассылку</h3>
-                    <label class="label-mail" for="E-mail" >E-mail</label>
-                    <input class="input-mail" type="E-mail" name="E-mail" id="E-mail" >
+                    <label class="label-mail" for="E-mail" ></label>
+                    <input class="input-mail" type="email" name="E-mail" id="E-mail" placeholder="E-mail" >
                     <button class="submit-button" type="submit">
                         <svg class="send" width="24" height="24">
                             <use href="./css/img.css/svg-img/send.svg#icon-send"></use>
@@ -420,25 +420,45 @@
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
-        <form class="modal-form" action="">
-            <label class="user-contacts" for="user-name">Имя</label>
-            <input class="user-contacts" type="name" name="name" id="user-name">
-
-            <label class="user-contacts" for="user-tell">Телефон</label>
-            <input class="user-contacts" type="tell" name="tell" id="user-tell">
-
-            <label class="user-contacts" for="user-email">Почта</label>
-            <input class="user-contacts" type="user-email" name="user-email" id="user-email">
-
-            <label class="user-contacts" for="user-comments">Комментарий</label>
-            <textarea name="comments" id="user-comments" cols="30" rows="10" placeholder="Введите текст"></textarea>
+        <form class="modal-form" >
+            <div class="user-contacts">
+                <label class="user-contact-list" for="user-name"> Имя</label>
+                <span class="position-modal">
+                    <input  type="text" name="name" id="user-name" >
+                    <svg class="position-modal-icon" width="12" height="12">
+                        <use href="./css/img.css/svg-img/modal-icons.svg#icon-body"></use>
+                    </svg>
+                </span>
+            </div>
+            <div class="user-contacts">
+                    <label class="user-contact-list" for="user-tell">Телефон</label>
+                <span class="position-modal">
+                        <input  type="tel" name="tell" id="user-tell">
+                        <svg class="position-modal-icon" width="13" height="13">
+                            <use href="./css/img.css/svg-img/modal-icons.svg#icon-phone"></use>
+                        </svg>
+                </span>
+            </div>
+            <div class="user-contacts">
+                    <label class="user-contact-list" for="user-email">Почта</label>
+                <span class="position-modal">
+                    <input  type="email" name="user-email" id="user-email" required>
+                    <svg class="position-modal-icon" width="15" height="12">
+                        <use href="./css/img.css/svg-img/modal-icons.svg#icon-mail"></use>
+                    </svg>
+                </span>
+            </div>
+            <div class="user-contacts contacts-comment">
+                <label class="user-contact-list" for="user-comments">Комментарий</label>
+                <textarea name="comments" id="user-comments" cols="30" rows="5" placeholder="Введите текст"></textarea>
+            </div>
             <div class="user-deal">
                 <label  for="user-deal">
                     <input class="checkbox" type="checkbox" name="user-deal" value="deal">
-                    Соглашаюсь с рассылкой и принимаю <a href=""> Условия договора</a></label>
+                    Соглашаюсь с рассылкой и принимаю <a class="deal" href=""> Условия договора</a></label>
             </div>
             <div class="send-button">
-                <button type="submit">Отправить</button>
+                <button class="btn-send" type="submit">Отправить</button>
             </div>
         </form>
     <button class="close" data-modal-close>
