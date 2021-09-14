@@ -408,12 +408,11 @@
                 <form class="forma" name="sighn-up-for-mailing"  autocomplete="on">
                     <h3 class="sighn">Подпишитесь на рассылку</h3>
                     <label class="label-mail" for="E-mail" ></label>
-                    <input class="input-mail" type="email" name="E-mail" id="E-mail" placeholder="E-mail" >
-                    <button class="submit-button" type="submit">
-                        <svg class="send" width="24" height="24">
-                            <use href="./css/img.css/svg-img/send.svg#icon-send"></use>
-                        </svg>
-                        Подписаться</button>
+                    <input class="input-mail" type="email" name="E-mail" id="E-mail" placeholder="E-mail"><button class="submit-button" type="submit">
+                        Подписаться
+                    <svg class="send" width="24" height="24">
+                        <use href="./css/img.css/svg-img/send.svg#icon-send"></use>
+                    </svg></button>
                 </form>
             </div>
     </footer>
@@ -423,7 +422,7 @@
         <form class="modal-form" >
             <div class="user-contacts">
                 <label class="user-contact-list" for="user-name"> Имя</label>
-                <span class="position-modal">
+                <span class="position-modal span">
                     <input  type="text" name="name" id="user-name" >
                     <svg class="position-modal-icon" width="12" height="12">
                         <use href="./css/img.css/svg-img/modal-icons.svg#icon-body"></use>
@@ -432,7 +431,7 @@
             </div>
             <div class="user-contacts">
                     <label class="user-contact-list" for="user-tell">Телефон</label>
-                <span class="position-modal">
+                <span class="position-modal span">
                         <input  type="tel" name="tell" id="user-tell">
                         <svg class="position-modal-icon" width="13" height="13">
                             <use href="./css/img.css/svg-img/modal-icons.svg#icon-phone"></use>
@@ -441,7 +440,7 @@
             </div>
             <div class="user-contacts">
                     <label class="user-contact-list" for="user-email">Почта</label>
-                <span class="position-modal">
+                <span class="position-modal span">
                     <input  type="email" name="user-email" id="user-email" required>
                     <svg class="position-modal-icon" width="15" height="12">
                         <use href="./css/img.css/svg-img/modal-icons.svg#icon-mail"></use>
@@ -452,14 +451,13 @@
                 <label class="user-contact-list" for="user-comments">Комментарий</label>
                 <textarea name="comments" id="user-comments" cols="30" rows="5" placeholder="Введите текст"></textarea>
             </div>
-            <div class="user-deal">
-                <label  for="user-deal">
+                <label class="label">
                     <input class="checkbox" type="checkbox" name="user-deal" value="deal">
+                    <span class="icon"></span>
                     Соглашаюсь с рассылкой и принимаю <a class="deal" href=""> Условия договора</a></label>
-            </div>
-            <div class="send-button">
-                <button class="btn-send" type="submit">Отправить</button>
-            </div>
+                <div class="button-send">
+                    <button class="btn-send" type="submit">Отправить</button>
+                </div>
         </form>
     <button class="close" data-modal-close>
         <svg class="close-hover" width="11" height="11">
