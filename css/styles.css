@@ -414,6 +414,7 @@ img {
   padding: 60px 0;
 }
 .footer-addres {
+  flex-grow: 1;
   margin-right: 70px;
 }
 .footer-container {
